@@ -4,3 +4,9 @@ C:\Репозитории\NeuralStuff\NeuralChatBot\Word2Vec.Net\bin\Debug\Word2
 C:\Репозитории\NeuralStuff\NeuralChatBot\Word2Vec.Net\obj\Debug\Word2Vec.Net.csprojResolveAssemblyReference.cache
 C:\Репозитории\NeuralStuff\NeuralChatBot\Word2Vec.Net\obj\Debug\Word2Vec.Net.dll
 C:\Репозитории\NeuralStuff\NeuralChatBot\Word2Vec.Net\obj\Debug\Word2Vec.Net.pdb
+C:\Repository\NeuralChatBot\NeuralChatBot\Word2Vec.Net\bin\Debug\Word2Vec.Net.XML
+C:\Repository\NeuralChatBot\NeuralChatBot\Word2Vec.Net\bin\Debug\Word2Vec.Net.dll
+C:\Repository\NeuralChatBot\NeuralChatBot\Word2Vec.Net\bin\Debug\Word2Vec.Net.pdb
+C:\Repository\NeuralChatBot\NeuralChatBot\Word2Vec.Net\obj\Debug\Word2Vec.Net.csprojResolveAssemblyReference.cache
+C:\Repository\NeuralChatBot\NeuralChatBot\Word2Vec.Net\obj\Debug\Word2Vec.Net.dll
+C:\Repository\NeuralChatBot\NeuralChatBot\Word2Vec.Net\obj\Debug\Word2Vec.Net.pdb
