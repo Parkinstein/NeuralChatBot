@@ -20,36 +20,45 @@ namespace VkDialogConverter
             }
         }
 
-        public const string IgnoreRegularTemplate = @"\d\d\.\d\d\.\d\d";
+        private const string IgnoreRegularTemplate = @"\d\d\.\d\d\.\d\d";
 
-        public DialogRecord(string sender, List<string> message)
+        public DialogRecord(List<string> message)
         {
-            Sender = sender;
-
-            StringBuilder sb = new StringBuilder();
-            foreach(var s in message)
+            if (message.Count > 1)
             {
-                var s1 = s.Replace("\n", "").Replace(",","").Replace("\t", "");
-                if (!Regex.IsMatch(s1.Trim(), IgnoreRegularTemplate) &&!string.IsNullOrWhiteSpace(s1))
+                if (!Regex.IsMatch(message[0].Trim(), IgnoreRegularTemplate) && !string.IsNullOrEmpty(message[0]) && !string.IsNullOrWhiteSpace(message[0]))
                 {
-                    sb.Append(s1);
-                }               
-            }
-            Message = sb.ToString();
+                    Sender = message[0];
+                }
+                StringBuilder sb = new StringBuilder();
+                for (int i = 1; i < message.Count; ++i)
+                {
+                    var s1 = message[i].Replace("\n", "").Replace(",", "").Replace("\t", "");
+                    if (!Regex.IsMatch(s1.Trim(), IgnoreRegularTemplate) && !string.IsNullOrWhiteSpace(s1)&&!s1.Contains("Forwarded messages"))
+                    {
+                        sb.Append(s1+" ");
+                    }
+                }
+                Message = sb.ToString();
+            }                   
         }
-        
+
         public void Append(List<string> message)
         {
-            StringBuilder sb = new StringBuilder();
-            foreach (var s in message)
+            if (message.Count > 1)
             {
-                var s1 = s.Replace("\n", "");
-                if (!Regex.IsMatch(s1.Trim(), IgnoreRegularTemplate) && !string.IsNullOrWhiteSpace(s1))
+                StringBuilder sb = new StringBuilder();
+                for (int i = 1; i < message.Count; ++i)
                 {
-                    sb.Append(s1);
+                    var s1 = message[i].Replace("\n", "").Replace(",", "").Replace("\t", "");
+                    if (!Regex.IsMatch(s1.Trim(), IgnoreRegularTemplate) && !string.IsNullOrWhiteSpace(s1) && !s1.Contains("Forwarded messages"))
+                    {
+                        sb.Append(s1 + " ");
+                    }
                 }
+                Message += sb.ToString();
             }
-            Message += sb.ToString();
+               
         }
     }
 }
