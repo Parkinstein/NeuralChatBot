@@ -1,0 +1,6 @@
+C:\Репозитории\NeuralStuff\NeuralChatBot\Word2Vec.Net\bin\Debug\Word2Vec.Net.XML
+C:\Репозитории\NeuralStuff\NeuralChatBot\Word2Vec.Net\bin\Debug\Word2Vec.Net.dll
+C:\Репозитории\NeuralStuff\NeuralChatBot\Word2Vec.Net\bin\Debug\Word2Vec.Net.pdb
+C:\Репозитории\NeuralStuff\NeuralChatBot\Word2Vec.Net\obj\Debug\Word2Vec.Net.csprojResolveAssemblyReference.cache
+C:\Репозитории\NeuralStuff\NeuralChatBot\Word2Vec.Net\obj\Debug\Word2Vec.Net.dll
+C:\Репозитории\NeuralStuff\NeuralChatBot\Word2Vec.Net\obj\Debug\Word2Vec.Net.pdb

@@ -1,0 +1,11 @@
+C:\Репозитории\NeuralStuff\NeuralChatBot\Work2VecConsoleApp\bin\Debug\questions-phrases.txt
+C:\Репозитории\NeuralStuff\NeuralChatBot\Work2VecConsoleApp\bin\Debug\questions-words.txt
+C:\Репозитории\NeuralStuff\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Work2VecConsoleApp.exe.config
+C:\Репозитории\NeuralStuff\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Work2VecConsoleApp.exe
+C:\Репозитории\NeuralStuff\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Work2VecConsoleApp.pdb
+C:\Репозитории\NeuralStuff\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Word2Vec.Net.dll
+C:\Репозитории\NeuralStuff\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Word2Vec.Net.pdb
+C:\Репозитории\NeuralStuff\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Word2Vec.Net.xml
+C:\Репозитории\NeuralStuff\NeuralChatBot\Work2VecConsoleApp\obj\Debug\Work2VecConsoleApp.csprojResolveAssemblyReference.cache
+C:\Репозитории\NeuralStuff\NeuralChatBot\Work2VecConsoleApp\obj\Debug\Work2VecConsoleApp.exe
+C:\Репозитории\NeuralStuff\NeuralChatBot\Work2VecConsoleApp\obj\Debug\Work2VecConsoleApp.pdb

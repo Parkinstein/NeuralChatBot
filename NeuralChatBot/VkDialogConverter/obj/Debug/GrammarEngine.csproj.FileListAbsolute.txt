@@ -1,0 +1,8 @@
+C:\Репозитории\NeuralStuff\NeuralChatBot\GrammarEngine\bin\Debug\GrammarEngine.exe.config
+C:\Репозитории\NeuralStuff\NeuralChatBot\GrammarEngine\bin\Debug\GrammarEngine.exe
+C:\Репозитории\NeuralStuff\NeuralChatBot\GrammarEngine\bin\Debug\GrammarEngine.pdb
+C:\Репозитории\NeuralStuff\NeuralChatBot\GrammarEngine\obj\Debug\GrammarEngine.exe
+C:\Репозитории\NeuralStuff\NeuralChatBot\GrammarEngine\obj\Debug\GrammarEngine.pdb
+C:\Репозитории\NeuralStuff\NeuralChatBot\GrammarEngine\bin\Debug\gren_consts.dll
+C:\Репозитории\NeuralStuff\NeuralChatBot\GrammarEngine\bin\Debug\gren_fx.dll
+C:\Репозитории\NeuralStuff\NeuralChatBot\GrammarEngine\obj\Debug\GrammarEngine.csprojResolveAssemblyReference.cache
