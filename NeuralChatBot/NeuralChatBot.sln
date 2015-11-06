@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Work2VecConsoleApp", "Work2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VkDialogConverter", "VkDialogConverter\VkDialogConverter.csproj", "{04DC4C91-A0B7-49ED-BA91-87CD64F63B85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNetwork", "NeuralNetwork\NeuralNetwork.csproj", "{87C5F677-B8A1-4425-859D-7DB81593A119}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{26B5DFB7-C314-4FFF-A236-435647AC85AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,15 @@ Global
 		{04DC4C91-A0B7-49ED-BA91-87CD64F63B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04DC4C91-A0B7-49ED-BA91-87CD64F63B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04DC4C91-A0B7-49ED-BA91-87CD64F63B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87C5F677-B8A1-4425-859D-7DB81593A119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C5F677-B8A1-4425-859D-7DB81593A119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C5F677-B8A1-4425-859D-7DB81593A119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C5F677-B8A1-4425-859D-7DB81593A119}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7724C534-6B39-4DA6-92CD-DA2155EE944C} = {26B5DFB7-C314-4FFF-A236-435647AC85AD}
 	EndGlobalSection
 EndGlobal

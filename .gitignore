@@ -1,6 +1,4 @@
-#ignore thumbnails created by windows
 Thumbs.db
-#Ignore files build by Visual Studio
 *.obj
 *.user
 *.aps
@@ -24,3 +22,4 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 *.dll
+NeuralChatBot/.vs/NeuralChatBot/v14/.suo

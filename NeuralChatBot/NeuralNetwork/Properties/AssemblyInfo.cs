@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("VkDialogConverter")]
+[assembly: AssemblyTitle("NeuralNetwork")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("VkDialogConverter")]
+[assembly: AssemblyProduct("NeuralNetwork")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("04dc4c91-a0b7-49ed-ba91-87cd64f63b85")]
+[assembly: Guid("87c5f677-b8a1-4425-859d-7db81593a119")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
