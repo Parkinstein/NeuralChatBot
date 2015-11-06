@@ -45,20 +45,26 @@ namespace VkDialogConverter
 
         public void Append(List<string> message)
         {
-            if (message.Count > 1)
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < message.Count; ++i)
             {
-                StringBuilder sb = new StringBuilder();
-                for (int i = 1; i < message.Count; ++i)
+                var s1 = message[i].Replace("\n", "").Replace(",", "").Replace("\t", "");
+                if (!Regex.IsMatch(s1.Trim(), IgnoreRegularTemplate) && !string.IsNullOrWhiteSpace(s1) && !s1.Contains("Forwarded messages"))
                 {
-                    var s1 = message[i].Replace("\n", "").Replace(",", "").Replace("\t", "");
-                    if (!Regex.IsMatch(s1.Trim(), IgnoreRegularTemplate) && !string.IsNullOrWhiteSpace(s1) && !s1.Contains("Forwarded messages"))
-                    {
-                        sb.Append(s1 + " ");
-                    }
+                    sb.Append(s1 + " ");
                 }
-                Message += sb.ToString();
             }
+            Message += sb.ToString();
+            
                
+        }
+        public void Append(DialogRecord other)
+        {
+            if (other.Sender != this.Sender)
+            {
+                return;
+            }
+            this.Message += other.Message;
         }
     }
 }

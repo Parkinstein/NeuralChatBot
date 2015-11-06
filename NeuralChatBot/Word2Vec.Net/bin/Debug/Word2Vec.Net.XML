@@ -4,6 +4,24 @@
         <name>Word2Vec.Net</name>
     </assembly>
     <members>
+        <member name="T:Word2Vec.Net.Utils.FileStreamExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Word2Vec.Net.Utils.FileStreamExtensions.ReadWord(System.IO.FileStream)">
+            <summary>
+            
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Word2Vec.Net.Word2VecAnalysisBase.#ctor(System.String)">
+            <summary>
+            Basic class for analysis algorithms( distnace, analogy, commpute-accuracy)
+            </summary>
+            <param name="fileName"></param>
+        </member>
         <member name="M:Word2Vec.Net.Word2VecBuilder.WithTrainFile(System.String)">
             <summary>
             adding train file path

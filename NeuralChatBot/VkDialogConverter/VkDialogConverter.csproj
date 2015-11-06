@@ -7,8 +7,8 @@
     <ProjectGuid>{04DC4C91-A0B7-49ED-BA91-87CD64F63B85}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GrammarEngine</RootNamespace>
-    <AssemblyName>GrammarEngine</AssemblyName>
+    <RootNamespace>VkDialogConverter</RootNamespace>
+    <AssemblyName>VkDialogConverter</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -58,12 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Word2Vec.Net\Word2Vec.Net.csproj">
-      <Project>{fefca2dc-137b-4eee-a779-0194bdfebe1f}</Project>
-      <Name>Word2Vec.Net</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
