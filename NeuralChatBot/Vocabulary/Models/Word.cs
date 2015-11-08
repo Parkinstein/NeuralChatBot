@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vocabulary
+namespace Vocabulary.Models
 {
     public class Word
     {
+        public int Id { get; set; }
         public string Value { get; set; }
-        public double[] Coords { get; set; }
+        public string Coords { get; set; }
     }
 }

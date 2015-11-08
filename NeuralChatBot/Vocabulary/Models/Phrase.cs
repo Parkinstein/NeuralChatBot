@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Vocabulary.Models
 {
-    class Phrase
+    public class Phrase
     {
+        public int Id { get; set; }
         public string Author { get; set; }
-        public List<Word> Words { get; set; }
-        public Phrase RelatedPhrase { get; set; }
+        public virtual List<Word> Words { get; set; }
+        public virtual Phrase RelatedPhrase { get; set; }
     }
 }
