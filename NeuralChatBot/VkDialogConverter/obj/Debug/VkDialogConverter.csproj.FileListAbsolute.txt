@@ -1,11 +1,11 @@
 C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\bin\Debug\gren_consts.dll
 C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\bin\Debug\gren_fx.dll
-C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\bin\Debug\Word2Vec.Net.dll
-C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\bin\Debug\Word2Vec.Net.pdb
-C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\bin\Debug\Word2Vec.Net.xml
 C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\obj\Debug\VkDialogConverter.csprojResolveAssemblyReference.cache
 C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\bin\Debug\VkDialogConverter.exe.config
 C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\bin\Debug\VkDialogConverter.exe
 C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\bin\Debug\VkDialogConverter.pdb
 C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\obj\Debug\VkDialogConverter.exe
 C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\obj\Debug\VkDialogConverter.pdb
+C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\bin\Debug\Word2Vec.Net.dll
+C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\bin\Debug\Word2Vec.Net.pdb
+C:\Repository\NeuralChatBot\NeuralChatBot\VkDialogConverter\bin\Debug\Word2Vec.Net.xml

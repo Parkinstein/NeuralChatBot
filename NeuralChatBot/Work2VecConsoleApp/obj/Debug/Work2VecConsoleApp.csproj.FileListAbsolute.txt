@@ -1,9 +1,4 @@
 C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Work2VecConsoleApp.exe.config
-C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\bin\Debug\wordvec\questions-phrases.txt
-C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\bin\Debug\wordvec\questions-words.txt
-C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Word2VecLib2.dll
-C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\bin\Debug\wordvec\hello.dll
-C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\bin\Debug\wordvec\word2vec.dll
 C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Work2VecConsoleApp.exe
 C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Work2VecConsoleApp.pdb
 C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Word2Vec.Net.dll
@@ -12,3 +7,5 @@ C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Word2Vec.
 C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\obj\Debug\Work2VecConsoleApp.csprojResolveAssemblyReference.cache
 C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\obj\Debug\Work2VecConsoleApp.exe
 C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\obj\Debug\Work2VecConsoleApp.pdb
+C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Work2VecConsoleApp.exe.CodeAnalysisLog.xml
+C:\Repository\NeuralChatBot\NeuralChatBot\Work2VecConsoleApp\bin\Debug\Work2VecConsoleApp.exe.lastcodeanalysissucceeded

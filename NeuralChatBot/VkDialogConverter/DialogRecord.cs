@@ -20,21 +20,22 @@ namespace VkDialogConverter
             }
         }
 
-        private const string IgnoreRegularTemplate = @"\d\d\.\d\d\.\d\d";
+        private const string IgnoreRegularPattern = @"\d\d\.\d\d\.\d\d|\d*:\d\d|Forwarded Messages|views|Wall post by a community";
+        
 
         public DialogRecord(List<string> message)
         {
             if (message.Count > 1)
             {
-                if (!Regex.IsMatch(message[0].Trim(), IgnoreRegularTemplate) && !string.IsNullOrEmpty(message[0]) && !string.IsNullOrWhiteSpace(message[0]))
+                if (!string.IsNullOrEmpty(message[0]) && !string.IsNullOrWhiteSpace(message[0]))
                 {
                     Sender = message[0];
                 }
                 StringBuilder sb = new StringBuilder();
                 for (int i = 1; i < message.Count; ++i)
                 {
-                    var s1 = message[i].Replace("\n", "").Replace(",", "").Replace("\t", "");
-                    if (!Regex.IsMatch(s1.Trim(), IgnoreRegularTemplate) && !string.IsNullOrWhiteSpace(s1)&&!s1.Contains("Forwarded messages"))
+                    var s1 = Regex.Replace(message[i].Replace("\n", "").Replace(",", "").Replace("\t", ""),IgnoreRegularPattern, String.Empty);
+                    if (ValidateString(s1))
                     {
                         sb.Append(s1+" ");
                     }
@@ -48,8 +49,8 @@ namespace VkDialogConverter
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < message.Count; ++i)
             {
-                var s1 = message[i].Replace("\n", "").Replace(",", "").Replace("\t", "");
-                if (!Regex.IsMatch(s1.Trim(), IgnoreRegularTemplate) && !string.IsNullOrWhiteSpace(s1) && !s1.Contains("Forwarded messages"))
+                var s1 = Regex.Replace(message[i].Replace("\n", "").Replace(",", "").Replace("\t", ""), IgnoreRegularPattern, String.Empty);
+                if (ValidateString(s1))
                 {
                     sb.Append(s1 + " ");
                 }
@@ -65,6 +66,13 @@ namespace VkDialogConverter
                 return;
             }
             this.Message += other.Message;
+        }
+
+        private bool ValidateString(string input)
+        {
+          
+            return (!Regex.IsMatch(input.Trim(), IgnoreRegularPattern) 
+                && !string.IsNullOrWhiteSpace(input));
         }
     }
 }

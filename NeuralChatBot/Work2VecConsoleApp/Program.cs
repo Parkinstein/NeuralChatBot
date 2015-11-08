@@ -64,7 +64,7 @@ namespace Work2VecConsoleApp
 
                 //return;
             }
-            args = "-train C:/TrainingSet/Вано.txt -output C:/TrainingSet/VanoVec.txt -size 100 -window 5 -sample 1e-4 -negative 5 -hs 0 -binary 0 -cbow 1 -iter 3".Split(' ');
+            args = "-train C:/TrainingSet/Вано.txt -output C:/TrainingSet/VanoVec.txt".Split(' ');
             int i;
             var builder = Word2VecBuilder.Create();
 

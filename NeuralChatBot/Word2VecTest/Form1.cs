@@ -18,7 +18,7 @@ namespace Word2VecTest
             InitializeComponent();
         }
 
-        private Distance _distance = new Distance(@"C:\TrainingSet\VanoVec.bin");
+        private Distance _distance = new Distance(@"C:\TrainingSet\ThemVec.txt");
         private void searchBtn_Click(object sender, EventArgs e)
         {
             resultsListBox.Items.Clear();
