@@ -14,10 +14,10 @@ namespace VkDialogConverter
         {
             //var word2Vec = Word2VecBuilder.Create()
             //   .WithTrainFile(@"C:\TrainingSet\Them.txt")
-            //   .WithOutputFile(@"C:\TrainingSet\ThemVec.txt")
+            //   .WithOutputFile(@"C:\TrainingSet\ThemSmallVecB.bin")
             //   //.WithCBow(0)
             //   .WithThreads(1)
-            //   .WithMinCount(1)
+            //   .WithMinCount(2)
             //   .WithSize(50)
             //   .Build();
             //word2Vec.TrainModel();
