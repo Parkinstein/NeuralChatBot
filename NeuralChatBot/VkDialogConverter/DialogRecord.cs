@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace VkDialogConverter
 {
-    class DialogRecord
+    public class DialogRecord
     {
         public DialogRecord RelatedRecord { get; set; }
         public string Sender { get; set; }

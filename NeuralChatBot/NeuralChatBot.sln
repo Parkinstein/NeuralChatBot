@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Word2Vec.Net", "Word2Vec.Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vocabulary", "Vocabulary\Vocabulary.csproj", "{350D25F8-1FE0-4797-8CD6-FD337D44B106}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNetworkLearner", "NeuralNetworkLearner\NeuralNetworkLearner.csproj", "{DEDFE9DD-5A28-4C98-A9CE-6D0131FF685C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{350D25F8-1FE0-4797-8CD6-FD337D44B106}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{350D25F8-1FE0-4797-8CD6-FD337D44B106}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{350D25F8-1FE0-4797-8CD6-FD337D44B106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEDFE9DD-5A28-4C98-A9CE-6D0131FF685C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDFE9DD-5A28-4C98-A9CE-6D0131FF685C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDFE9DD-5A28-4C98-A9CE-6D0131FF685C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDFE9DD-5A28-4C98-A9CE-6D0131FF685C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,10 +7,14 @@ using System.IO;
 
 namespace VkDialogConverter
 {
-    class DialogService
+    public class DialogService
     {
         public List<DialogRecord> Records { get; set; }
 
+        /// <summary>
+        /// Сохраняет все записи экземпляра в в файл
+        /// </summary>
+        /// <param name="path"></param>
         public void SaveToFile(string path)
         {
             StringBuilder sb = new StringBuilder();
@@ -24,6 +28,13 @@ namespace VkDialogConverter
             }
         }
 
+        /// <summary>
+        /// Извлекает все записи диалога из файла
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="speaker1"></param>
+        /// <param name="speaker2"></param>
+        /// <returns></returns>
         public static List<DialogRecord> GetRecordsFromFile(string path, string speaker1, string speaker2)
         {
             var buffer = new List<string>();
@@ -83,21 +94,21 @@ namespace VkDialogConverter
 
             return wholeDialog;
         }
-        
-        public static void CreateSets()
+               
+        public static List<DialogRecord> CreateSets(bool saveToFile = false)
         {
             string speaker1 = "Roman";
 
             Dictionary<string, string> fileDictionary = new Dictionary<string, string>();
-            fileDictionary.Add("Vano", @"C:\TrainingSet\Vano.txt");
-            fileDictionary.Add("Anna", @"C:\TrainingSet\Anna.txt");
-            fileDictionary.Add("Danila", @"C:\TrainingSet\Danila.txt");
-            fileDictionary.Add("Dinara", @"C:\TrainingSet\Dinara.txt");
-            fileDictionary.Add("Farit", @"C:\TrainingSet\Farit.txt");
-            fileDictionary.Add("Igor", @"C:\TrainingSet\Igor.txt");
-            fileDictionary.Add("Katherine", @"C:\TrainingSet\Katherine.txt");
-            fileDictionary.Add("Lilia", @"C:\TrainingSet\Lilia.txt");
-            fileDictionary.Add("Tanya", @"C:\TrainingSet\Tanya.txt");
+            fileDictionary.Add("Vano", @"C:\TrainingSet\Dialogs\Vano.txt");
+            fileDictionary.Add("Anna", @"C:\TrainingSet\Dialogs\Anna.txt");
+            fileDictionary.Add("Danila", @"C:\TrainingSet\Dialogs\Danila.txt");
+            fileDictionary.Add("Dinara", @"C:\TrainingSet\Dialogs\Dinara.txt");
+            fileDictionary.Add("Farit", @"C:\TrainingSet\Dialogs\Farit.txt");
+            fileDictionary.Add("Igor", @"C:\TrainingSet\Dialogs\Igor.txt");
+            fileDictionary.Add("Katherine", @"C:\TrainingSet\Dialogs\Katherine.txt");
+            fileDictionary.Add("Lilia", @"C:\TrainingSet\Dialogs\Lilia.txt");
+            fileDictionary.Add("Tanya", @"C:\TrainingSet\Dialogs\Tanya.txt");
 
             DialogService myReplics = new DialogService();
             DialogService theirReplics = new DialogService();
@@ -111,10 +122,7 @@ namespace VkDialogConverter
                 Console.WriteLine(string.Format("Processing Dialog between {0} and {1}...", speaker1, speaker2));
 
                 List<DialogRecord> wholeDialog = DialogService.GetRecordsFromFile(inputPath, speaker1, speaker2);
-                //List<string> AllWords = new List<string>();
-
-                //wholeDialog.ForEach(x => AllWords.AddRange(x.Words));
-                //AllWords = AllWords.Distinct().ToList();
+                
 
                 var speaker1Role = wholeDialog.Where(x => x.Sender == speaker1).ToList();
                 var speaker2Role = wholeDialog.Where(x => x.Sender == speaker2).ToList();
@@ -125,23 +133,23 @@ namespace VkDialogConverter
                     throw new Exception("Something bad happend..." + speaker2);
                 }
 
-                //for (int i = 0; i < speaker2Role.Count; ++i)
-                //{
-                //    if (i < speaker1Role.Count)
-                //    {
-                //        speaker2Role[i].RelatedRecord = speaker1Role[i];
-                //    }
-                //}
+                for (int i = 0; i < speaker2Role.Count; ++i)
+                {
+                    if (i < speaker1Role.Count)
+                    {
+                        speaker2Role[i].RelatedRecord = speaker1Role[i];
+                    }
+                }
                 myReplics.Records.AddRange(speaker1Role);
                 theirReplics.Records.AddRange(speaker2Role);
             }
 
-            myReplics.SaveToFile(@"C:\TrainingSet\Me.txt");
-            theirReplics.SaveToFile(@"C:\TrainingSet\Them.txt");
-
-            GC.Collect();
-            Console.WriteLine("Ready.");
-            Console.ReadKey();
+            if (saveToFile)
+            {
+                myReplics.SaveToFile(@"C:\TrainingSet\Me.txt");
+                theirReplics.SaveToFile(@"C:\TrainingSet\Them.txt");
+            }
+            return theirReplics.Records;        
         }
     }
 }

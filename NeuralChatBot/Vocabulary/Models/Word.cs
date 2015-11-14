@@ -11,5 +11,7 @@ namespace Vocabulary.Models
         public int Id { get; set; }
         public string Value { get; set; }
         public string Coords { get; set; }
+        public bool IsTeacher { get; set; }
+        public virtual List<Phrase> Phrases { get; set; }
     }
 }
